@@ -46,7 +46,7 @@ Update the following constants in the `.ino` file before uploading:
 #define WIFI_PASS   "Your_WiFi_Password"
 #define FB          "[https://your-project-url.firebaseio.com](https://your-project-url.firebaseio.com)"
 
-3. Required Libraries
+### 3. Required Libraries
 Install these via the Arduino Library Manager:
 
 ArduinoJson (by Benoit Blanchon)
@@ -57,7 +57,7 @@ HTTPClient (Built-in)
 
 WebServer (Built-in)
 
-4. Installation
+### 4. Installation
 Connect your ESP32 to your computer.
 
 Open the code in the Arduino IDE.
@@ -68,7 +68,7 @@ Click Upload.
 
 Open the Serial Monitor (115200 baud) to see the device's local IP address.
 
-⚙️ Adjustable Parameters (Tuning)
+### ⚙️ Adjustable Parameters (Tuning)
 You can fine-tune the sensor behavior by modifying these values in the code:
 
 THRESHOLD (200.0f): Detection distance in cm. If an object is closer than this, it counts.
@@ -77,7 +77,7 @@ HYSTERESIS (250.0f): The object must move further than this distance before the 
 
 COOLDOWN (140000UL): Minimum milliseconds (e.g., 140 seconds) between two valid counts to avoid noise.
 
-📊 Firebase Data Structure
+### 📊 Firebase Data Structure
 The device maintains the following structure in your database:
 
 {
@@ -90,7 +90,7 @@ The device maintains the following structure in your database:
   }
 }
 
-🌐 Local Web Interface
+### 🌐 Local Web Interface
 Once connected to WiFi, you can visit the ESP32's IP address (e.g., http://192.168.100.160) to view:
 
 Current Distance: Real-time ultrasonic readings.
